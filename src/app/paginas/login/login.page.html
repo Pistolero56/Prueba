@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <div>
+        <ion-avatar>
+          <img alt="Silhouette of a person's head" src="https://cdn-icons-png.flaticon.com/512/888/888918.png" />
+        </ion-avatar>
+        <ion-card-header>
+        <h1>Bienvenido</h1>
+      </ion-card-header>
+        </div>
+        <ion-card-header>
+        <ion-item>
+        <ion-label position="stacked" type="text">Usuario</ion-label>
+        <ion-input></ion-input>
+
+        <ion-label position="stacked" type="password">Contraseña</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+    </ion-card-header>
+      <ion-item>
+        <ion-label>Recuerdarme</ion-label>
+        <ion-toggle slot="end"></ion-toggle>
+      </ion-item>
+      <ion-button expand="block" [routerLink]="['/perfil']">Iniciar sesion</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>
